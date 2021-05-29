@@ -27,25 +27,14 @@ function send() {
 }
 
 function getData() { 
-    firebase.database().ref("/"+room_name).on('value', function(snapshot) 
-    { 
-            document.getElementById("output").innerHTML = ""; 
-            snapshot.forEach()
-                function(childSnapshot) { childKey  = childSnapshot.key; childData = childSnapshot.val(); 
-        
-                    if(childKey != "purpose") {
-                        firebase_message_id = childKey;
-                        message_data = childData;
-                        
-                        getData();
-
-                        function redirectToRoomName(name)
-                        {
-                            console.log(name);
-                            localStorage.setItem("room_name", name);
-                            window.location = "kwitter_page.html";
-                        };
-                    }
-              }  
-    }
-};
+    function getData() {firebase.database().ref("/").on('value',
+    function(snapshot) {document.getElementById("output").innerHTML =
+    "";snapshot.forEach(function(childSnapshot) {childKey =
+    childSnapshot.key;
+     Room_names = childKey;
+     //Start code
+     <div class="name" id="Room_name"></div>
+     var Room_names= document.getElementById("Room_name").value;
+     //End code
+     });});}
+    getData();
