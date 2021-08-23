@@ -6,7 +6,7 @@ html, body
 
 body
 {
-background-image: linear-gradient(to right top, #33a0f1, #2591d9, #1882c1, #0a73aa, #006494);
+background-image: linear-gradient(to right top, #ff9966, #ff5e62 );
 }
 
 .header
@@ -48,7 +48,7 @@ background-image: linear-gradient(to right top, #33a0f1, #2591d9, #1882c1, #0a73
 
 #output
 {
-	padding: 10px; width:80%;background: rgba(255,255,255,0.8);border-radius: 15px;
+	padding: 10px; width:80%;background: rgb(26, 24, 153);border-radius: 15px;
 }
 
 .input_div_room_page
@@ -64,11 +64,11 @@ background-image: linear-gradient(to right top, #33a0f1, #2591d9, #1882c1, #0a73
 
 .input_div_message_page
 {
-	position: fixed;bottom: 0px;width: 100%;background: rgba(255,255,255,0.8);
+	position: fixed;bottom: 0px;width: 100%;background: rgba1(65, 55, 253, 1);
 }
 .input_div_message_page label
 {
-	color: black;
+	color: rgb(200, 212, 26);
 }
 .input_div_message_page #msg
 {
@@ -90,5 +90,5 @@ background-image: linear-gradient(to right top, #33a0f1, #2591d9, #1882c1, #0a73
 }
 .message_h4
 {
-	padding-left:5px;color:grey;
+	padding-left:5px;color:rgb(255, 0, 0);
 }
